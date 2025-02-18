@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+           background-image:url(back\ ground2-removebg-preview.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            font-family: Arial, sans-serif;
+            
+            
+            
+            
+        }
+     
+      
+        h1 {
+            color: #FF4500; 
+            text-align: center;
+            font-size: 60px;
+            margin-top: 20px;
+        }
+        .header2 {
+            position: relative;
+            text-align: center; 
+            padding: 40px;
+            color:#FF4500; 
+            background-color: rgba(0, 0, 0, 0.6); 
+        }
+        .header2 p {
+            font-size: 24px;
+            line-height: 1.6;
+            margin-bottom: 20px; 
+            max-width: 800px; 
+            margin-left: auto; 
+            margin-right: auto; 
+        }
+        
+            button {
+            background-color: cyan;
+            color:white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px; /* Default font size */
+            transition: box-shadow 0.3s ease;
+    width: 100px;
+   
+        }
+        button:hover {
+            box-shadow: 0 0 5px cyan,
+                        0 0 25px cyan,
+                        0 0 50px cyan,
+                        0 0 100px cyan,
+                        0 0 200px cyan;
+        }
+        /* Laptops and larger screens */
+        @media (min-width: 1025px) {
+            h1 {
+                font-size: 60px; /* Larger heading for desktops */
+            }
+            .header2 p {
+                font-size: 24px; /* Standard paragraph size */
+            }
+          
+
+        /* Tablets (width <= 1024px and > 768px) */
+        @media (max-width: 1024px) and (min-width: 769px) {
+            h1 {
+                font-size: 50px; /* Slightly smaller heading */
+            }
+            .header2 p {
+                font-size: 20px; /* Smaller paragraphs */
+            }
+            button {
+                width: 80%; /* Wider button for easier tapping */
+            }
+          
+
+        /* Phones (width <= 768px) */
+        @media only screen and (max-width: 600px) {
+            h1 {
+                font-size: 40px; /* Further reduce font size for phones */
+            }
+            .header2 p {
+                font-size: 18px; /* Further reduce paragraph size */
+                padding: 20px; /* Adjust padding for smaller screens */
+            }
+            button {
+                width: 20%; /* Wider button for easier tapping */
+                font-size: 14px; /* Smaller button text */
+            }
+           
+           
+        }
+        body{
+            animation: ani 10s linear infinite;
+                
+            }
+        }
+
+        /* Very small devices (width <= 576px) */
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 32px; /* Smallest heading size */
+            }
+            .header2 p {
+                font-size: 16px; /* Smallest paragraph size */
+            }
+
+
+    </style>
+</head>
+<body>
+   
+    <header>
+        <h1>About Us</h1>
+    </header>
+    <main class="header2">
+        <p>Welcome to <span  style= color:white><strong>The Country Cafe</strong> </span>, where comfort meets flavor! Nestled in the heart of the countryside, we pride ourselves on creating a warm, inviting atmosphere that feels like home. Our mission is to serve hearty, delicious meals made from the freshest locally-sourced ingredients.</p>
+
+        <p>At <span  style= color:white><strong>The Country Cafe</strong> </span>, we celebrate the simple joys of life—sharing good food with good friends and family. Our menu features a delightful mix of classic comfort foods, seasonal specials, and homemade baked goods, all crafted with love and care. Whether you’re stopping by for a hearty breakfast, a leisurely lunch, or a cozy dinner, we have something to satisfy every palate.</p>
+        
+        <p>We believe in community and sustainability, so we partner with local farmers and producers to bring you the best of what our region has to offer. Our friendly staff is here to ensure you have a memorable dining experience, from the moment you walk in until the last bite.</p>
+        
+        <p>Join us at <span  style= color:white><strong>The Country Cafe</strong> </span>, where every meal is a celebration of home-cooked goodness and community spirit. We can’t wait to welcome you!</p>
+    </main>
+</body>
+</html>

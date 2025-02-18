@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" >
+    <title>Restaurant</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            background-image: url(back-removebg-preview.png);
+            font-family: Arial, sans-serif;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        header {
+            background-color:black;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 20px;
+            font-size: 70px;
+        }
+        nav a {
+            text-decoration: none;
+            color: #FF4500;
+            margin-right: 20px; /* Added some space between the links */
+        }
+        nav a:hover {
+            color: #FEA116; /* Hover effect for better interaction */
+        }
+        .Header2 {
+            background-color:black;
+            display: flex;
+            justify-content: space-between;
+            padding-top: 20px;
+            align-items: center;
+        }
+        #COUNT {
+            text-decoration: none;
+            font-size: 50px; 
+            font-weight: bold;
+            color: #FF4500;
+            text-shadow: 2px 2px 4px #FEA116;
+            padding-top: 20px;
+            padding-left: 400px;
+        }
+        .Header3 {
+            position: relative;
+        }
+        h2 {
+            color: white; /* Changed to white for better contrast */
+            position: absolute;
+            top: 20%;
+            left: 5%;
+            font-size: 80px;
+            text-shadow: 2px 2px 4px #FEA116;
+        }
+        p {
+            color: #FF4500;
+            position: absolute;
+            margin-top: 10%;
+            left: 5%;
+            font-size: 60px;
+            font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+            text-shadow: 2px 2px 4px black;
+        }
+        .Header4 img {
+            width: 35%; 
+            height: 700px; 
+            position: absolute;
+            margin-top: 100px;
+            right: 5%;
+            animation: ani 10s linear infinite;
+        }
+        @keyframes ani {
+            from { transform: rotate(360deg); }
+            to { transform: rotate(0deg); }
+        }
+        #BUT button {
+            background-color: cyan;
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            cursor: pointer;
+            font-size: 16px; 
+            transition: box-shadow 0.3s ease;
+            margin-right: 100px;
+        }
+        button:hover {
+            box-shadow: 0 0 5px cyan,
+                        0 0 25px cyan,
+                        0 0 50px cyan,
+                        0 0 100px cyan,
+                        0 0 200px cyan;
+        }
+        @media only screen and (max-width: 601px) {
+            nav a {
+                font-size: 20px;
+                margin-left: 30px;
+            }
+            #COUNT {
+                font-size: 50px;
+            }
+            h2 {
+                font-size: 15px;
+            }
+            p {
+                margin-top: 70px;
+                font-size: 20px;
+            }
+            .Header4 img {
+                width: 15%;
+                margin-right: 100px;
+                top: 20px;
+            }
+            #BUT button {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+        }
+        @media only screen and (min-width: 300px){
+            nav a {
+                font-size: 6px;
+                font-weight: bold;
+            }
+            #COUNT {
+                font-size: 11px;
+                font-weight: bold;
+                margin-left: 50px;
+            }
+            h2 {
+                font-size: 28px;
+                margin-top: 140px;
+                margin-left: 5px;
+            }
+            p {
+                font-size: 30px;
+            }
+            .Header4 img {
+                width: 70%;
+                margin-right: 50px;
+                top: 0px;
+            }
+            #BUT button {
+                padding: 8px 16px;
+                font-size: 14px;
+            }
+        }
+        @media (min-width: 1024px) { 
+            nav a {
+                text-decoration: none;
+                margin: 0 10px;
+                font-size: 20px;
+            }
+            h2 {
+                font-size: 80px;
+                margin-bottom: 50px;
+                margin-left: 60px;
+            }
+            #COUNT {
+                margin-left: 500px;
+                font-size: 50px;
+            }
+            p {
+                font-size: 50px; 
+                margin-left: 60px;
+            }
+            .Header4 img {
+                width: 35%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="Track.html" id="T" aria-label="Track Order">Track Order</a>
+            <a href="About.html" id="A" aria-label="About Us">About Us</a>
+            <a href="contact.html" id="C" aria-label="Contact">Contact</a>
+            <a href="Menu.html" id="MEN" aria-label="Menu">Menu</a>
+            <a href="https://www.google.com/maps/place/THE+COUNTRY+CAFE" id="Cont" aria-label="Contact Information" target="_blank">Contact Us 24/7: 9080980465</a>
+        </nav>
+    </header>
+    <div class="Header2">
+        <a href="#" id="COUNT" aria-label="The Country Cafe">THE COUNTRY CAFE</a>
+        <a href="Back.jpg" id="BUT"><button id="book-table-button">BOOK A TABLE</button></a>
+    </div>
+    <div class="container" style="position: relative">
+        <div class="Header3">
+            <h2>Enjoy Your Delicious Meals</h2>
+            <p>In the realm of love, our collection of biryani-inspired <br> quotes offers a delectable fusion of emotions and flavors.<br>Like a well-cooked biryani, each quote is crafted to add <br> a touch of warmth and richness to your heart.<br> So, spice up your romance and savor the affectionate<br> words in every bite.</p>
+        </div>
+        <div class="Header4">
+            <img src="Bright_Biryani-removebg-preview.png" alt="Delicious biryani dish" style="filter: none;">
+        </div>
+    </div>
+</body>
+</html>

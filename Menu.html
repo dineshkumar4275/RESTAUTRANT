@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu</title>
+    <style>
+      body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f3f4f6;
+}
+
+header {
+    background-color: #FF5733; /* Bright header color */
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+main {
+    padding: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    border-radius: 10px;
+    padding: 15px;
+    background-color: #fff; /* White background for sections */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #FF5733; /* Section headings in bright color */
+    border-bottom: 2px solid #FF5733;
+    padding-bottom: 5px;
+}
+
+.menu-item {
+    background-color: #FFEB3B; /* Light yellow for menu items */
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.menu-item:hover {
+    transform: scale(1.02); /* Slight scale effect on hover */
+}
+
+.menu-item h3 {
+    margin: 0;
+    color: #FF5733; /* Title color for items */
+}
+
+.menu-item p {
+    color: #555; /* Darker text for descriptions */
+}
+
+.menu-item span {
+    font-weight: bold;
+    color: #FF5722; /* Price color */
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #333;
+    color: #fff;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+button {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background-color:cyan;
+            color: black;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        button:hover {
+    box-shadow: 0 0 5px cyan,
+    0 0 25px cyan, 0 0 50px cyan,
+    0 0 100px cyan, 0 0 200px cyan;
+}
+/* General Styles for Tablets and Smaller Devices */
+@media (max-width: 768px) {
+    nav ul {
+        padding: 0;
+    }
+
+    nav ul li {
+        display: block; /* Stack navigation items */
+        margin: 10px 0;
+        text-align: center; /* Center text for better appearance */
+    }
+
+    .menu-item {
+        padding: 10px;
+        margin: 5px 0; /* Reduce margin for smaller screens */
+    }
+}
+
+/* Styles for Phones */
+@media (max-width: 480px) {
+    header {
+        padding: 10px; /* Reduce padding */
+    }
+
+    h1 {
+        font-size: 1.5em; /* Smaller header text */
+    }
+
+    h2 {
+        font-size: 1.2em; /* Adjust section header size */
+    }
+
+    .menu-item {
+        padding: 8px; /* Reduce padding further */
+    }
+
+    button {
+        width: 30%; /* Make button full width */
+        padding: 15px; /* Adjust padding */
+    }
+}
+
+/* Styles for Laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+    header {
+        padding: 15px; /* Slightly larger padding */
+    }
+
+    h1 {
+        font-size: 2em; /* Increase header size */
+    }
+
+    .menu-item {
+        padding: 12px; /* Moderate padding */
+        margin: 10px 0; /* Standard margin */
+    }
+}
+
+
+    </style>
+</head>
+<body>
+    
+    <header>
+        <h1>Welcome to Our Restaurant</h1>
+        <nav>
+            <ul>
+                <li><a href="#appetizers">Appetizers</a></li>
+                <li><a href="#main-courses">Main Courses</a></li>
+                <li><a href="#desserts">Desserts</a></li>
+                <li><a href="#drinks">Drinks</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="appetizers">
+            <h2>Appetizers</h2>
+            <div class="menu-item">
+                <h3>Spring Rolls</h3>
+                <p>Delicious vegetable spring rolls.</p>
+                <span>$5.00</span>
+            </div>
+            <div class="menu-item">
+                <h3>Bruschetta</h3>
+                <p>Grilled bread topped with tomatoes and basil.</p>
+                <span>$6.00</span>
+            </div>
+        </section>
+
+        <section id="main-courses">
+            <h2>Main Courses</h2>
+            <div class="menu-item">
+                <h3>Grilled Salmon</h3>
+                <p>Fresh salmon grilled to perfection.</p>
+                <span>$15.00</span>
+            </div>
+            <div class="menu-item">
+                <h3>Pasta Primavera</h3>
+                <p>Pasta tossed with fresh seasonal vegetables.</p>
+                <span>$12.00</span>
+            </div>
+        </section>
+
+        <section id="desserts">
+            <h2>Desserts</h2>
+            <div class="menu-item">
+                <h3>Chocolate Cake</h3>
+                <p>Rich and moist chocolate cake.</p>
+                <span>$7.00</span>
+            </div>
+            <div class="menu-item">
+                <h3>Tiramisu</h3>
+                <p>Classic Italian dessert with coffee flavor.</p>
+                <span>$8.00</span>
+            </div>
+        </section>
+
+        <section id="drinks">
+            <h2>Drinks</h2>
+            <div class="menu-item">
+                <h3>House Red Wine</h3>
+                <p>Full-bodied red wine.</p>
+                <span>$10.00</span>
+            </div>
+            <div class="menu-item">
+                <h3>Fresh Lemonade</h3>
+                <p>Refreshing homemade lemonade.</p>
+                <span>$4.00</span>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Our Restaurant. All rights reserved.</p>
+    </footer>
+
+    <script >
+        document.querySelectorAll('.menu-item').forEach(item => {
+    item.addEventListener('click', () => {
+        alert(`You selected ${item.querySelector('h3').textContent}`);
+    });
+});
+
+    </script>
+</body>
+</html>

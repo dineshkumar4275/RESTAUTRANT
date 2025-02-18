@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Order Tracker for The Country Cafe">
+    <meta name="keywords" content="Order Tracker, Delivery Status, Country Cafe">
+    <title>Order Tracker Bootstrap Template</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <style>
+       
+    body {
+        display: flex;
+        flex-direction: column;
+        height: 100vh;
+        background-color:  #FF4500; /* Bootstrap success color */
+        color: #212529; /* Bootstrap text color */
+    }
+
+    button {
+        background-color: cyan;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        font-size: 16px;
+        transition: box-shadow 0.3s ease;
+        width: 100px;
+    }
+
+    button:hover {
+        box-shadow: 0 0 5px cyan,
+                    0 0 25px cyan,
+                    0 0 50px cyan,
+                    0 0 100px cyan,
+                    0 0 200px cyan;
+    }
+
+    .badge {
+        font-weight: bold;
+    }
+
+    .icon {
+        font-size: 2rem; /* Adjust the icon size */
+        margin: 0 1rem;
+    }
+
+    /* Media Queries */
+    
+    /* Laptops and larger screens (width > 1024px) */
+    @media (min-width: 1025px) {
+        .container {
+            max-width: 1200px; /* Limit max width on larger screens */
+        }
+    }
+
+    /* Tablets (width <= 1024px and > 768px) */
+    @media (max-width: 1024px) and (min-width: 769px) {
+        button {
+            width: 70%; /* Wider buttons on tablets */
+            font-size: 14px; /* Slightly smaller font size */
+        }
+
+        .icon {
+            font-size: 1.8rem; /* Slightly smaller icons */
+        }
+
+        .text-dark, .font-weight-bolder {
+            text-align: center; /* Center align text */
+        }
+    }
+
+    /* Phones (width <= 768px) */
+    @media (max-width: 600px) {
+        button {
+            width: 90%; /* Make button wider on smaller screens */
+            font-size: 14px; /* Consistent font size */
+        }
+
+        .icon {
+            font-size: 15px; /* Smaller icons on mobile */
+        }
+
+        .h3, .h5 {
+            text-align: center; /* Center align text on mobile */
+        }
+
+        .container-fluid {
+            flex-direction: column; /* Stack elements vertically */
+            align-items: center; /* Center elements */
+        }
+        button {
+            font-size: 12px; /* Further reduce button text size */
+            width:80px;
+        }
+    }
+
+    /* Very small devices (width <= 576px) */
+    @media (max-width: 576px) {
+        .badge {
+            font-size: 0.8rem; /* Smaller badges */
+        }
+
+        .text-dark, .font-weight-bolder {
+            font-size: 0.9rem; /* Reduce text size */
+        }
+
+        button {
+            font-size: 5px; /* Further reduce button text size */
+        }
+    }
+
+
+    </style>
+</head>
+
+<body>
+    <header>
+       
+    </header>
+    <main class="container h-50 px-4 py-5 mx-auto">
+        <div class="card bg-light shadow-lg border border-dark rounded-lg py-3 px-5 my-5">
+            <div class="row d-flex justify-content-between mx-5 pt-3 my-3">
+                <div class="text-center">
+                    <h3 class="text-success mb-3">THE COUNTRY CAFE</h3>
+                </div>
+                <div class="d-flex">
+                    <p class="h5 text-dark">
+                        <i class="text-primary fa-solid fa-cart-shopping fa-lg mr-1"></i>
+                        Order ID:
+                        <span class="text-success font-weight-bold">
+                            <i class="text-secondary fa-solid fa-hashtag mr-1"></i>ZMJ82D9
+                        </span>
+                    </p>
+                </div>
+                <div class="d-flex flex-column text-sm-right h5">
+                    <p class="mb-0 font-weight-bolder text-monospace">Expected Arrival
+                        <span class="badge badge-pill badge-primary border border-secondary text-light px-2 py-2 shadow">01/05/204</span>
+                    </p>
+                    <p class="font-weight-bold text-monospace pt-3 ml-5">Tracking ID
+                        <span class="badge badge-pill badge-danger border border-secondary text-light mx-1 px-2 py-2 shadow">23458039</span>
+                    </p>
+                </div>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="container-fluid p-2 align-items-center">
+                            <div class="d-flex justify-content-around">
+                                <button class="btn bg-success text-white rounded-circle" data-bs-toggle="tooltip" title="Order Confirmed" aria-label="Order Confirmed">
+                                    <i class="fa-solid fa-check"></i>
+                                </button>
+                                <span class="bg-success w-50 p-1 mx-n1 rounded mt-auto mb-auto"></span>
+                                <button class="btn bg-success text-white rounded-circle" data-bs-toggle="tooltip" title="Order Shipped" aria-label="Order Shipped">
+                                    <i class="fa-solid fa-check"></i>
+                                </button>
+                                <span class="bg-success w-50 p-1 mx-n1 rounded mt-auto mb-auto"></span>
+                                <button class="btn bg-success text-white rounded-circle" data-bs-toggle="tooltip" title="Out for delivery" aria-label="Out for delivery">
+                                    <i class="fa-solid fa-check"></i>
+                                </button>
+                                <span class="bg-secondary w-50 p-1 mx-n1 rounded mt-auto mb-auto"></span>
+                                <button class="btn bg-secondary text-white rounded-circle" data-bs-toggle="tooltip" title="Order Delivered" aria-label="Order Delivered">
+                                    <i class="fa-solid fa-check"></i>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row d-inline-flex justify-content-around my-3 py-4 mx-n2">
+                <div class="row d-inline-flex align-items-center">
+                    <i class="text-primary fa-solid fa-clipboard-check icon"></i>
+                    <p class="text-dark font-weight-bolder py-1 px-1 mx-n2">Order<br>Confirmed</p>
+                </div>
+                <div class="row d-inline-flex align-items-center">
+                    <i class="text-warning fa-solid fa-boxes-packing icon"></i>
+                    <p class="text-dark font-weight-bolder py-1 px-1 mx-n2">Order<br>Shipped</p>
+                </div>
+                <div class="row d-inline-flex align-items-center">
+                    <i class="text-info fa-solid fa-truck-arrow-right icon"></i>
+                    <p class="text-dark font-weight-bolder py-1 px-1 mx-n2">Out for<br>Delivery</p>
+                </div>
+                <div class="row d-inline-flex align-items-center">
+                    <i class="text-success fa-solid fa-house-chimney icon"></i>
+                    <p class="text-dark font-weight-bolder py-1 px-1 mx-n2">Order<br>Delivered</p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
